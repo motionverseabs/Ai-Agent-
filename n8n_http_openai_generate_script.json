@@ -1,0 +1,15 @@
+{
+  "model": "gpt-4o-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Follow the prompt strictly."
+    },
+    {
+      "role": "user",
+      "content": "<<<INSERT youtube_script_prompt.txt HERE>>>\n\nTopic: {{ $json.topic }}\nStyle: Hinglish\nVideo Length: 60 seconds\nGenerate the JSON output now."
+    }
+  ],
+  "max_tokens": 700,
+  "temperature": 0.9
+}
